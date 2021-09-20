@@ -1,0 +1,128 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crafty Girls', cursive;
+    font-size: 62.5%;
+    border-top: .3rem double red;
+    background-color: #8080805b;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.logo-container {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.logo-container h1 {
+    font-size: 2rem;
+    color: red;
+}
+
+/* MAIN */
+
+.main-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container__btn {
+    outline: none;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: orangered;
+    padding: .5rem 3rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    color: white;
+    transition: .5s filter ease-in-out;
+    margin: 0 .4rem;
+}
+
+.main-container__btn:hover {
+    filter: opacity(75%);
+    cursor: pointer;
+}
+
+.main-container-frame {
+    width: 30rem;
+    height: 10rem;
+    margin: auto;
+    border: .3rem double red;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: "linha" 
+                         "linha"
+                         "linha"
+                         "linha"
+                         "linha"
+                         "linha"
+                         ;
+    grid-auto-rows: auto;
+    padding: 0;
+}
+
+.main-container-frame__field {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #f0808062;
+    grid-gap: 0;
+    transition: .6s step-start;
+}
+
+@media (max-width: 538px) {
+    .main-container-frame,
+    .main-container-frame__field {
+        width: 80%;
+    }
+}
+
+.main-container-frame__field:hover,
+.main-container-frame:hover {
+    background-color: #dcdcdc77;
+}
+
+/* FOOTER */
+
+.footer-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer-container h3,
+.footer-container p {
+    color: red;
+    font-size: .8rem;
+}
+
+#year {
+    color: orangered;
+    font-size: 1rem;
+}
